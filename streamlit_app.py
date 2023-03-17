@@ -4,6 +4,8 @@ from st_functions import st_button, load_css
 from PIL import Image
 import base64
 
+st.set_page_config(page_title='Gowtham M')
+
 
 def redirect(url):
     html = f'<a href="{url}" target="_blank"></a>'
