@@ -39,7 +39,7 @@ def lightbutton(label, url, iconsize):
             <a href={url} class="btn btn-outline-primary btn-lg btn-block" type="button" aria-pressed="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width={iconsize} height={iconsize} fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                     <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-                </svg>  
+                </svg>
                 {label}
             </a>
         </p>'''
@@ -94,10 +94,11 @@ st.info(
 button("CodeNight🌙", 'https://codenight.streamlit.app/', 22)
 st.markdown("---")
 st.write("### Free Internships")
+button('>ACCENTURE - Forage',
+       'https://www.theforage.com/virtual-internships/program-divisions/PxenP4rHNE6Bh4nQz?ref=cHRkY9shPRdYn9aRr ', 22)
 button('Forage - Virtual Internships (200+ Self-Paced Internship)',
        'https://www.theforage.com/course-catalog', 22)
-button('AICTE - GOOGLE SUPPORTED VIRTUAL INTERNSHIP',
-       'https://internship.aicte-india.org/internship-details.php?uid=INTERNSHIP_1654499134629da73e88342&level=4', 22)
+
 button('AICTE - IBM SKILLSBUILD INTERNSHIP CAMP - CLOUD COMPUTING',
        'https://internship.aicte-india.org/internship-details.php?uid=INTERNSHIP_165847255262da486823908&level=4', 22)
 button('AICTE - IBM INTERNSHIP - ARTIFICIAL INTELLIGENCE & MACHINE LEARNING',
@@ -121,8 +122,7 @@ button('Suven Technologies-6+ internships',
 button('Cognizant - Artificial Intelligence',
        'https://www.theforage.com/virtual-internships/prototype/5N2ygyhzMWjKQmgCK/Cognizant-Artificial-Intelligence-Virtual-Experience-Program', 22)
 st.write("### Internships with stipend💸")
-button('Internshala - Analytics 📉',
-       'https://internshala.com/internship/detail/analytics-work-from-home-job-internship-at-cleartax1678794610', 22)
+
 button('indeed', 'https://in.indeed.com/q-free-internship-l-chennai,-tamil-nadu-jobs.html?vjk=8f8483643f5ffc08', 22)
 button('Simply Hired', 'https://www.simplyhired.co.in/search?q=free+internship&l=chennai%2C+tamil+nadu&job=3WeyMWBedSQOuvurNEDs0zb7DHbMxDD3lriTATqfUAkB2d76NE74Lw', 22)
 button('code-bind Technologies',
@@ -181,8 +181,29 @@ tab1, tab2, tab3 = st.tabs(
 with tab1:
     col1, col2 = st.columns(2)
     with col1:
-        lightbutton('1) Simple Roadmap', 'https://youtu.be/ysEN5RaKOlA', 22)
-        lightbutton('3) Full Stack', 'https://youtu.be/nu_pCVPKzTk', 22)
+        lightbutton('Roadmap', 'https://youtu.be/ysEN5RaKOlA', 22)
+        lightbutton('Frontend', 'https://youtu.be/ZxKM3DCV2kE', 22)
+        lightbutton('Full Stack', 'https://youtu.be/nu_pCVPKzTk', 22)
+        lightbutton('Github Desktop',
+                    'https://www.youtube.com/watch?v=8Dd7KRpKeaE&t=258s', 22)
+        lightbutton(
+            'Learn html', 'https://www.youtube.com/watch?v=kUMe1FH4CHE&t=10278s', 22)
+        lightbutton(
+            'ReactJs', 'https://youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3', 22)
+    with col2:
+        lightbutton('Backend', 'https://youtu.be/jBzwzrDvZ18', 22)
+        lightbutton('Github for beginners',
+                    'https://www.youtube.com/watch?v=RGOj5yH7evk&t=952s', 22)
+        lightbutton('DevOps', 'https://youtu.be/hQcFE0RD0cQ', 22)
+        lightbutton('html in 1 hour',
+                    'https://www.youtube.com/watch?v=qz0aGYrrlhU&t=1s', 22)
+        lightbutton('css full course',
+                    'https://www.youtube.com/watch?v=n4R2E7O-Ngo', 22)
+        lightbutton(
+            'Vuejs', 'https://www.youtube.com/watch?v=FXpIoQ_rT_c&t=2737s', 22)
+        lightbutton(
+            'AngularJs', 'https://youtube.com/playlist?list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v', 22)
+        # lightbutton()
 
 
 # st_button('medium', 'https://data-professor.medium.com/',
