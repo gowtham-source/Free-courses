@@ -67,8 +67,6 @@ load_css()
 # st.write("[![Star](https://img.shields.io/github/stars/dataprofessor/links.svg?logo=github&style=social)](https://gitHub.com/dataprofessor/links)")
 st.write("[![Instagram](https://img.shields.io/badge/Instagram-%40Gowtham-orange?logo=instagram)](https://www.instagram.com/mystical_boy_25/)")
 
-col1, col2, col3 = st.columns(3)
-col2.image(Image.open('my.png'))
 
 st.header('Gowtham M, B Tech Ai & Ds✨')
 
